@@ -9,7 +9,8 @@
 		{
 			"@type": "siibra/volume/v0.0.1",
 			"providers": {
-				"neuroglancer/precomputed": "https://bai.marmosetbrain.org/neuroglancer/atlas"
+				"neuroglancer/precomputed": "https://bai.marmosetbrain.org/neuroglancer/atlas",
+				"neuroglancer/precompmesh/surface": "https://bai.marmosetbrain.org/neuroglancer/segmentations 200"
 			}
 		}
 	],
