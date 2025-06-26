@@ -24,11 +24,11 @@ async def gen_atlas(terms, term_versions):
         'abbreviation': 'MarmosetNMA',
         'author': None,
         'custodian': None,
-        'description': 'Histology‐Based Average Template of the Marmoset Cortex With Probabilistic Localization of Cytoarchitectural Areas',
+        'description': 'The Marmoset Nencki-Monash Atlas is a three dimensional (3D) probabilistic  brain atlas reconstructed from 20 young adult marmoset monkeys (Callithrix jacchus) and segmented based on the cytoarchitectonic analysis of the serial Nissl-stained sections of those brains.',
         'digitalIdentifier': {
-            '@id': 'https://doi.org/10.1016/j.neuroimage.2020.117625'
+            '@id': 'https://search.kg.ebrains.eu/instances/6eb874e1-63b3-4889-948a-0d3987cb249b'
         },
-        'fullName': 'Marmoset Nencki-Monash atlas',
+        'fullName': 'Marmoset Nencki-Monash Probabilistic Cytoarchitectonic Brain Atlas',
         'hasTerminology': {
             '@type': 'https://openminds.om-i.org/types/ParcellationTerminology',
             'dataLocation': None,
@@ -40,7 +40,7 @@ async def gen_atlas(terms, term_versions):
         }],
         'homepage': 'https://www.marmosetbrain.org',
         'howToCite': 'Piotr Majka, Sylwia Bednarek, Jonathan M. Chan, Natalia Jermakow, Cirong Liu, Gabriela Saworska, Katrina H. Worthy, Afonso C. Silva, Daniel K. Wójcik, Marcello G.P. Rosa, Histology‐Based Average Template of the Marmoset Cortex With Probabilistic Localization of Cytoarchitectural Areas, NeuroImage, Volume 226, 2021, 117625, ISSN 1053-8119, https://doi.org/10.1016/j.neuroimage.2020.117625. (https://www.sciencedirect.com/science/article/pii/S1053811920311101)',
-        'shortName': 'Marmoset Nencki-Monash template',
+        'shortName': 'Marmoset Nencki-Monash Atlas',
         'usedSpecies': {
             '@id': 'https://openminds.om-i.org/instances/species/callithrixJacchus'
         }
@@ -77,7 +77,7 @@ async def gen_atlas(terms, term_versions):
     meta_version['ontologyIdentifier'] = None
     meta_version['otherContribution'] = None
     meta_version['relatedPublication'] = [{
-        '@id': ''
+        '@id': 'https://doi.org/10.1016/j.neuroimage.2020.117625'
     }]
     meta_version['releaseDate'] = None
     meta_version['repository'] = None
@@ -85,11 +85,11 @@ async def gen_atlas(terms, term_versions):
         'support@marmosetbrain.org'
     ]
     meta_version['type'] = {
-        '@id': 'https://openminds.om-i.org/instances/atlasType/deterministicAtlas'
+        '@id': 'https://openminds.om-i.org/instances/atlasType/probabilisticAtlas'
     }
     meta_version['usedSpecimen'] = None
     meta_version['versionIdentifier'] = 'v1'
-    meta_version['versionInnovation'] = ''
+    meta_version['versionInnovation'] = None
 
     space = {
         '@context': {
@@ -100,9 +100,9 @@ async def gen_atlas(terms, term_versions):
         'abbreviation': 'MarmosetNMA',
         'author': None,
         'custodian': None,
-        'description': None,
+        'description': 'The Marmoset Nencki-Monash Template is a three dimensional (3D) population-based  brain template reconstructed from 20 postmortem brains obtained from young adult marmoset monkeys (Callithrix jacchus).',
         'digitalIdentifier': None,
-        'fullName': 'Marmoset Nencki-Monash Space of the Common Marmoset (coordinate space)',
+        'fullName': 'Marmoset Nencki-Monash Population-Based Brain Template',
         'hasVersion': [
             {
                 '@id': 'https://openminds.om-i.org/instances/commonCoordinateSpaceVersion/MarmosetNMA_v1'
@@ -111,9 +111,9 @@ async def gen_atlas(terms, term_versions):
         'homepage': 'https://www.marmosetbrain.org/nencki_monash_template',
         'howToCite': None,
         'ontologyIdentifier': None,
-        'shortName': 'Nencki-Monash Space of the Common Marmoset Brain',
+        'shortName': 'Marmoset Nencki-Monash Template',
         'usedSpecies': {
-            '@id': 'https://openminds.om-i.org/instances/species/rattusNorvegicus'
+            '@id': 'https://openminds.om-i.org/instances/species/callithrixJacchus'
         }
     }
 
@@ -128,10 +128,10 @@ async def gen_atlas(terms, term_versions):
         '@id': 'https://openminds.om-i.org/instances/anatomicalAxesOrientation/RAS'
     }
     space_v['versionIdentifier'] = 'v1'
-    space_v['versionInnovation'] = ''
+    space_v['versionInnovation'] = None
     space_v['fullDocumentation'] = None
     space_v['nativeUnit'] = {
-        '@id': 'https://openminds.om-i.org/instances/unitOfMeasurement/micrometer'
+        '@id': 'https://openminds.om-i.org/instances/unitOfMeasurement/millimeter'
     }
     space_v['axesOrigin'] = None
     space_v['releaseDate'] = None
@@ -216,6 +216,11 @@ async def main():
         id_ = to_camel_case(id_)
         if id_ in label_ids:
             raise ValueError('dup area code found')
+        if r.parent:
+            parent = r.parent
+            p_id = re.sub(patt, '', parent.name).strip().replace(' ', '_')
+            p_id = to_camel_case(p_id)
+            p_id = f'https://openminds.om-i.org/instances/parcellationEntity/MarmosetNMA_{p_id}'
         label_ids.add(id_)
         code = r.code
         hex_color = r.color_code
@@ -226,14 +231,15 @@ async def main():
                 '@id': f'https://openminds.om-i.org/instances/parcellationEntityVersion/MarmosetNMA_v1_{id_}'
             }
         ]
+
+        p['hasParent'] = [{
+            '@id': p_id
+        }]
         p['abbreviation'] = code
         terms.append(p['@id'])
 
         p['lookupLabel'] = f'MarmosetNMA_{id_}'
         p['alternateName'] = [
-            code,
-            name,
-            id_
         ]
         p['name'] = name
         with open(os.path.join('parcellationEntities', 'MarmosetNMA', f'MarmosetNMA_{id_}.jsonld'), 'w') as f:
@@ -246,11 +252,6 @@ async def main():
         print()
 
         if r.is_leaf:
-            parent = r.parent
-            p_id = re.sub(patt, '', parent.name).strip().replace(' ', '_')
-            p_id = to_camel_case(p_id)
-            p_id = f'https://openminds.om-i.org/instances/parcellationEntity/MarmosetNMA_{p_id}'
-
             p_v = p.copy()
             del p_v['hasVersion']
             del p_v['relatedUBERONTerm']
@@ -261,9 +262,6 @@ async def main():
             p_v['abbreviation'] = code
             p_v['additionalRemarks'] = None
             p_v['alternateName'] = [
-                code,
-                name,
-                id_
             ]
             p_v['correctedName'] = None
             p_v['hasAnnotation'] = [{
@@ -274,7 +272,7 @@ async def main():
                     '@id': 'https://openminds.om-i.org/instances/criteriaQualityType/processive'
                 },
                 'criteriaType': {
-                    '@id': 'https://openminds.om-i.org/instances/annotationCriteriaType/deterministicAnnotation'
+                    '@id': 'https://openminds.om-i.org/instances/annotationCriteriaType/probabalisticAnnotation'
                 },
                 'inspiredBy': None,
                 'internalIdentifier': f'{idx}',
@@ -282,9 +280,6 @@ async def main():
                     {
                         '@id': 'https://openminds.om-i.org/instances/laterality/left'
                     },
-                    {
-                        '@id': 'https://openminds.om-i.org/instances/laterality/right'
-                    }
                 ],
                 'preferredVisualization': {
                     '@type': 'https://openminds.om-i.org/types/ViewerSpecification',
