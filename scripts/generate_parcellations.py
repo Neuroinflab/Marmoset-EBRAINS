@@ -1,3 +1,5 @@
+import os
+import re
 import json
 import uvloop
 import databases
@@ -26,8 +28,7 @@ def traverse(regions, nodes):
             name = n.name
         if n.color_code == '#00FFAB':
             _node = {
-                'id': 'nencki/nm/parcellationatlas/v1.0.0/MARMOSET_NM_STRUCTURE_SPIRIFORM_CORTEX',
-                'name': name,
+                'name': name + ' (Structural)',
                 'rgb': n.color_code,
             }
         else:
@@ -76,7 +77,6 @@ async def main():
 
     await marmoset_db.disconnect()
 
-    print ('regions', regions)
     """
         space ebrain data
             "openminds/DatasetVersion": "d69b70e2-3002-4eaf-9c61-9c56f019bbc8",
@@ -135,12 +135,12 @@ async def main():
     for r in sorted(lookup.values(), key=lambda v: v._3dbar_index):
         if r.is_leaf:
             name = r.name[0].lower() + r.name[1:]
+            indices[name] = [{
+                'label': r._3dbar_index,
+                'volume': 0
+            }]
         else:
             name = r.name
-        indices[name] = [{
-            'label': r._3dbar_index,
-            'volume': 0
-        }]
 
     """
         "sparsemap": {
@@ -151,7 +151,6 @@ async def main():
     """
     map_ = {
         '@id': 'siibra-map-v0.0.1_marmoset-nm-labelled',
-        'name': 'Marmoset Nencki-Monash Atlas',
         "@type": "siibra/map/v0.0.1",
         "space": {
             "@id": "nencki/nm/referencespace/v1.0.0/MARMOSET_NM_NISSL_2020"
@@ -170,8 +169,59 @@ async def main():
         ],
         "indices": indices
     }
+    cont_volumns = []
+    indices = {}
+    patt = r'\(.*?\)'
+    for idx, r in enumerate(sorted(lookup.values(), key=lambda v: v._3dbar_index)):
+        vol_idx = len(cont_volumns)
+        if r._3dbar_index == 99:
+            continue
+        if r.is_leaf:
+            name = r.name[0].lower() + r.name[1:]
+            indices[name] = [{
+                'label': r._3dbar_index,
+                'volume': 0
+            }]
+        else:
+            name = r.name
+        code = r.code.replace('/', '-')
+        code = re.sub(patt, '', code).strip()
+        fn = f'probability_map_{r._3dbar_index:03d}_{code}.nii.gz'
+        if not os.path.exists('/home/baishi/tmp/tmp/probability_map/' + fn):
+            raise ValueError(fn)
+        cont_volumns.append({
+            '@type': 'siibra/volume/v0.0.1',
+            'providers': {
+                'nii': f'https://data-proxy.ebrains.eu/api/v1/public/buckets/marmoset-nencki-monash-template/probability_map/{fn}'
+            }
+        })
+        indices[name] = [
+            {'volume': vol_idx}
+        ]
+    map_continuous = {
+        '@id': 'siibra-map-v0.0.1_marmoset-nm-continuous',
+        'name': 'Marmoset Nencki-Monash Atlas',
+        "@type": "siibra/map/v0.0.1",
+        "space": {
+            "@id": "nencki/nm/referencespace/v1.0.0/MARMOSET_NM_NISSL_2020"
+        },
+        "parcellation": {
+            "@id": "nencki/nm/parcellationatlas/v1.0.0/MARMOSET_NM"
+        },
+        "sparsemap": {
+            'is_sparsemap': True,
+            'cached': False,
+            'url': ''
+        },
+        "volumes": cont_volumns,
+        "indices": indices
+    }
+
     with open('../siibra-configurations/maps/marmoset_nm-cortical-labelled.json', 'w') as f:
         f.write(json.dumps(map_, indent='\t', ensure_ascii=False) + '\n')
+
+    with open('../siibra-configurations/maps/marmoset_nm-cortical-continuous.json', 'w') as f:
+        f.write(json.dumps(map_continuous, indent='\t', ensure_ascii=False) + '\n')
 
 if __name__ == '__main__':
     uvloop.run(main())
