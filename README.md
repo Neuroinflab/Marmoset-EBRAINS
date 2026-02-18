@@ -1,4 +1,4 @@
-# Marmoset-EBRAINS
+# Marmoset@EBRAINS
 
 EBRAINS is a leading platform for advancing neuroscience research, providing extensive support for rodent and human-oriented datasets. However, it currently supports only one non-human primate (NHP) species, despite the critical role NHPs play in bridging the transnational gap between rodent models and human studies. From a technical standpoint, the platform lacks a standardized procedure for incorporating atlases of additional animal species.
 
