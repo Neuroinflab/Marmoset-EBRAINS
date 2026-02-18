@@ -1,0 +1,183 @@
+{
+  "_type": "EBRAINS metadata wizard webform data",
+  "_version": "2.0.1",
+  "_createdAt": "1/30/2025, 10:54:36",
+  "_lastModified": "1/30/2025, 10:54:36",
+  "formData": {
+    "general": {
+      "ticketNumber": "4824591",
+      "contactperson": {
+        "firstName": "Piotr",
+        "lastName": "Majka",
+        "email": "p.majka@nencki.edu.pl"
+      }
+    },
+    "datasetinfo": {
+      "dataset": {
+        "fullName": "Histology‐Based Average Template of the Marmoset Cortex"
+      },
+      "datasetVersion": {
+        "shortName": "Nencki-Monash (NM) template",
+        "dataType": [
+          "Experimental data",
+          "Derived data"
+        ],
+        "embargoIntro": null,
+        "copyrightStatus": {
+          "isCopyrighted": false
+        },
+        "license": "https://kg.ebrains.eu/api/instances/418544bf-c328-468f-bdcc-9b40623bd65b"
+      }
+    },
+    "dataset2info": {
+      "datasetVersion": {
+        "homepage": "https://www.marmosetbrain.org/nencki_monash_template",
+        "supportChannelIntro": null,
+        "supportChannel": [],
+        "inputData": "https://doi.org/10.1016/j.neuroimage.2020.117625",
+        "relatedPublication": [
+          "https://doi.org/10.1016/j.neuroimage.2020.117625"
+        ]
+      }
+    },
+    "funding": {
+      "datasetVersion": {
+        "funding": [
+          {
+            "funder": "International Neuroinformatics Coordinating Facility",
+            "awardNumber": "INCF Seed Funding grant scheme"
+          },
+          {
+            "funder": "National Centre for Research and Development",
+            "awardNumber": "ERA-NET-NEURON/17/2017"
+          },
+          {
+            "funder": "National Science Centre",
+            "awardNumber": "2019/35/D/NZ4/03031"
+          },
+          {
+            "funder": "Australian Research Council",
+            "awardNumber": "CE140100007"
+          },
+          {
+            "funder": "National Health and Medical Research Council",
+            "awardNumber": "APP1122220"
+          }
+        ]
+      }
+    },
+    "contributors": {
+      "dataset": {
+        "authors": [
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Piotr",
+              "familyName": "Majka",
+              "digitalIdentifier": "0000-0002-9055-8686",
+              "affiliation": "Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of Polish Academy of Sciences",
+              "emailMissing": false,
+              "email": "p.majka@nencki.edu.pl"
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Sylwia",
+              "familyName": "Bednarek",
+              "digitalIdentifier": "0000-0002-5743-5967",
+              "affiliation": "Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of Polish Academy of Sciences",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Jonathan M.",
+              "familyName": "Chan",
+              "digitalIdentifier": "0000-0002-0216-6173",
+              "affiliation": "Australian Research Council, Centre of Excellence for Integrative Brain Function, Monash University Node, Clayton",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Natalia",
+              "familyName": "Jermakow",
+              "digitalIdentifier": "0000-0001-5639-2603",
+              "affiliation": "Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Cirong",
+              "familyName": "Liu",
+              "digitalIdentifier": "0000-0002-7986-4615",
+              "affiliation": "Department of Neurobiology, University of Pittsburgh Brain Institute",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Katrina H.",
+              "familyName": "Worthy",
+              "digitalIdentifier": "0000-0001-9539-9744",
+              "affiliation": "Biomedicine Discovery Institute and Department of Physiology, Monash University, Clayton",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Afonso C.",
+              "familyName": "Silva",
+              "digitalIdentifier": "0000-0002-6105-7567",
+              "affiliation": "Department of Neurobiology, University of Pittsburgh Brain Institute",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": false,
+            "existingPerson": "Wójcik, Daniel K."
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Marcello G.P.",
+              "familyName": " Rosa",
+              "digitalIdentifier": "0000-0002-6620-6285",
+              "affiliation": "Australian Research Council, Centre of Excellence for Integrative Brain Function, Monash University Node, Clayton",
+              "emailMissing": false,
+              "email": "marcello.rosa@monash.edu"
+            }
+          }
+        ]
+      },
+      "datasetVersion": {
+        "otherContribution": []
+      }
+    },
+    "experiment": {
+      "subjectExpMetadata": {
+        "subjectsExist": true
+      },
+      "datasetVersion": {
+        "experimentalApproach": [
+          null
+        ],
+        "technique": [
+          null
+        ],
+        "keywordsIntro": null,
+        "techniqueIntro": null,
+        "experimentalApproachIntro": null,
+        "studyTargetIntro": null,
+        "preparationDesignIntro": null
+      }
+    }
+  }
+}
