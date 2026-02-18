@@ -1,0 +1,289 @@
+{
+  "_type": "EBRAINS metadata wizard webform data",
+  "_version": "2.0.1",
+  "_createdAt": "2/3/2025, 06:16:11",
+  "_lastModified": "2/3/2025, 06:16:11",
+  "formData": {
+    "general": {
+      "ticketNumber": "4824591",
+      "contactperson": {
+        "firstName": "Piotr",
+        "lastName": "Majka",
+        "email": "p.pmajka@nencki.edu.pl"
+      }
+    },
+    "datasetinfo": {
+      "dataset": {
+        "fullName": "Marmoset Brain Connectivity Atlas"
+      },
+      "datasetVersion": {
+        "shortName": "Marmoset Brain Connectivity",
+        "dataType": [
+          "Experimental data",
+          "Raw data",
+          "Derived data"
+        ],
+        "embargoIntro": null,
+        "copyrightStatus": {
+          "isCopyrighted": false
+        },
+        "license": "https://kg.ebrains.eu/api/instances/64c1704b-db12-4b29-9541-b9143d081044"
+      }
+    },
+    "dataset2info": {
+      "datasetVersion": {
+        "homepage": "https://www.marmosetbrain.org/",
+        "supportChannelIntro": null,
+        "inputData": "10.1038/s41467-020-14858-0",
+        "relatedPublication": [
+          "https://doi.org/10.1038/s41467-020-14858-0"
+        ]
+      }
+    },
+    "funding": {
+      "datasetVersion": {
+        "funding": [
+          {
+            "funder": "Australian Research Council",
+            "awardNumber": "DP110101200, DP140101968, CE140100007"
+          },
+          {
+            "funder": "National Health and Medical Research Council",
+            "awardNumber": "APP1003906, APP1020839, APP1083152, APP1082144, APP1122220"
+          },
+          {
+            "funder": "International Neuroinformatics Coordinating Facility",
+            "awardNumber": "INCF Seed Funding grant scheme"
+          },
+          {
+            "funder": "European Regional Development Fund under the Operational Program Innovative Economy",
+            "awardNumber": "POIG.02.03.00-00-003/09"
+          },
+          {
+            "funder": "National Centre for Research and Development",
+            "awardNumber": "ERA-NET-NEURON/17/2017"
+          },
+          {
+            "funder": "National Institute of Mental Health",
+            "awardNumber": "R01MH062349"
+          },
+          {
+            "funder": "Office of Naval Research",
+            "awardNumber": "N00014-17-1-2041"
+          },
+          {
+            "funder": "Cold Spring Harbor Laboratory",
+            "awardNumber": "Crick-Clay Professorship"
+          },
+          {
+            "funder": "Mathers Foundation, and the Indian Institute of Technology Madras",
+            "awardNumber": "H. N. Mahabala Chair"
+          }
+        ]
+      }
+    },
+    "contributors": {
+      "dataset": {
+        "authors": [
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Piotr",
+              "familyName": "Majka",
+              "digitalIdentifier": "0000-0002-9055-8686",
+              "affiliation": "Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, 3 Pasteur Street, 02-093, Warsaw, Poland",
+              "emailMissing": false,
+              "email": "p.majka@nencki.edu.pl"
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Bai",
+              "familyName": "Shi",
+              "digitalIdentifier": "0000-0003-3926-1841",
+              "affiliation": "Australian Research Council, Centre of Excellence for Integrative Brain Function, Monash University Node, Clayton, VIC, 3800, Australia",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Sophia",
+              "familyName": "Bakola",
+              "affiliation": "Australian Research Council, Centre of Excellence for Integrative Brain Function, Monash University Node, Clayton, VIC, 3800, Australia",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Sylwia",
+              "familyName": "Bednarek",
+              "digitalIdentifier": "0000-0002-5743-5967",
+              "affiliation": "    Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, 3 Pasteur Street, 02-093, Warsaw, Poland",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Jonathan M.",
+              "familyName": "Chan",
+              "digitalIdentifier": "0000-0002-0216-6173",
+              "affiliation": "Australian Research Council, Centre of Excellence for Integrative Brain Function, Monash University Node, Clayton, VIC, 3800, Australia",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Natalia",
+              "familyName": "Jermakow",
+              "digitalIdentifier": "0000-0001-5639-2603",
+              "affiliation": "    Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, 3 Pasteur Street, 02-093, Warsaw, Poland",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Lauretta",
+              "familyName": "Passarelli",
+              "digitalIdentifier": "0000-0001-5009-2773",
+              "affiliation": "    Department of Biomedical and Neuromotor Sciences Pharmacy and Biotechnology, University of Bologna, Bologna, 40126, Italy",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "David H.",
+              "familyName": "Reser",
+              "digitalIdentifier": "0000-0002-5130-1255",
+              "affiliation": "Biomedicine Discovery Institute and Department of Physiology, Monash University, Clayton, VIC, 3800, Australia",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Panagiota",
+              "familyName": "Theodoni",
+              "digitalIdentifier": "0000-0002-8270-547",
+              "affiliation": "Center for Neural Science, New York University, NY, 10003, USA",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Katrina H.",
+              "familyName": "Worthy",
+              "digitalIdentifier": "0000-0001-9539-9744",
+              "affiliation": "    Biomedicine Discovery Institute and Department of Physiology, Monash University, Clayton, VIC, 3800, Australia",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Xiao-Jing ",
+              "familyName": "Wang",
+              "digitalIdentifier": "0000-0003-3124-8474",
+              "affiliation": "Center for Neural Science, New York University, NY, 10003, USA",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Daniel K.",
+              "familyName": "Wójcik",
+              "digitalIdentifier": "0000-0003-0812-9872",
+              "affiliation": "Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, 3 Pasteur Street, 02-093, Warsaw, Poland",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Partha P.",
+              "familyName": "Mitra",
+              "digitalIdentifier": "0000-0001-8818-6804",
+              "affiliation": "Cold Spring Harbor Laboratory, Cold Spring Harbor, New York, NY, 11724, USA",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Marcello G. P.",
+              "familyName": "Rosa",
+              "affiliation": "Australian Research Council, Centre of Excellence for Integrative Brain Function, Monash University Node, Clayton, VIC, 3800, Australia",
+              "emailMissing": false,
+              "email": "marcello.rosa@monash.edu"
+            }
+          }
+        ]
+      },
+      "datasetVersion": {
+        "otherContribution": []
+      }
+    },
+    "experiment": {
+      "subjectExpMetadata": {
+        "subjectsExist": true
+      },
+      "datasetVersion": {
+        "experimentalApproach": [
+          "anatomy",
+          "informatics",
+          "neural connectivity",
+          "histology"
+        ],
+        "preparationDesign": [
+          "https://kg.ebrains.eu/api/instances/77f7c7e7-ad5f-4001-b246-7f50981076b1"
+        ],
+        "technique": [
+          "retrograde tracing",
+          "image registration",
+          "diffeomorphic registration",
+          "cryosectioning"
+        ],
+        "studyTarget": [
+          {
+            "term": "GeneticStrainType",
+            "instance": "wildtype"
+          },
+          {
+            "term": "Species",
+            "instance": "Callithrix jacchus"
+          },
+          {
+            "term": "Organ",
+            "instance": "brain"
+          },
+          {
+            "term": "UBERONParcellation",
+            "instance": "neocortex"
+          },
+          {
+            "term": "UBERONParcellation",
+            "instance": "cerebral cortex"
+          },
+          {
+            "term": "BiologicalOrder",
+            "instance": "Primates"
+          }
+        ],
+        "keyword": [],
+        "keywordsIntro": null,
+        "techniqueIntro": null,
+        "experimentalApproachIntro": null,
+        "studyTargetIntro": null,
+        "preparationDesignIntro": null
+      }
+    }
+  }
+}

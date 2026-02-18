@@ -1,0 +1,183 @@
+{
+  "_type": "EBRAINS metadata wizard webform data",
+  "_version": "2.0.1",
+  "_createdAt": "1/30/2025, 12:59:01",
+  "_lastModified": "1/30/2025, 12:59:01",
+  "formData": {
+    "general": {
+      "ticketNumber": "4824591",
+      "contactperson": {
+        "firstName": "Piotr",
+        "lastName": "Majka",
+        "email": "p.majka@nencki.edu.pl"
+      }
+    },
+    "datasetinfo": {
+      "dataset": {
+        "fullName": "Distribution of calbindin-positive neurons across areas and layers of the marmoset cerebral cortex"
+      },
+      "datasetVersion": {
+        "shortName": "CB+ neurons in NHP cortex",
+        "dataType": [
+          "Experimental data",
+          "Derived data"
+        ],
+        "embargoIntro": null,
+        "copyrightStatus": {
+          "isCopyrighted": false
+        },
+        "license": "https://kg.ebrains.eu/api/instances/64c1704b-db12-4b29-9541-b9143d081044"
+      }
+    },
+    "dataset2info": {
+      "datasetVersion": {
+        "homepage": "https://www.marmosetbrain.org/whole_brain_cb_maps",
+        "supportChannelIntro": null,
+        "supportChannel": [],
+        "inputData": " https://doi.org/10.1371/journal.pcbi.1012428",
+        "relatedPublication": [
+          "https://doi.org/10.1371/journal.pcbi.1012428"
+        ]
+      }
+    },
+    "funding": {
+      "datasetVersion": {
+        "funding": [
+          {
+            "funder": "National Science Centre",
+            "awardNumber": "2019/35/D/NZ4/03031"
+          },
+          {
+            "funder": "National Health and Medical Research Council",
+            "awardNumber": "APP1194206"
+          },
+          {
+            "funder": "National Health and Medical Research Council",
+            "awardNumber": "APP2019011"
+          }
+        ]
+      }
+    },
+    "contributors": {
+      "dataset": {
+        "authors": [
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Nafiseh",
+              "familyName": "Atapour",
+              "digitalIdentifier": "0000-0002-8773-9283",
+              "affiliation": "Department of Physiology and Neuroscience Program, Biomedicine Discovery Institute, Monash University, Clayton, Australia ",
+              "emailMissing": false,
+              "email": "nafiseh.atapour@monash.edu"
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Marcello G.P.",
+              "familyName": "Rosa",
+              "digitalIdentifier": "0000-0002-6620-6285",
+              "affiliation": "Department of Physiology and Neuroscience Program, Biomedicine Discovery Institute, Monash University, Clayton, Australia",
+              "emailMissing": false,
+              "email": "marcello.rosa@monash.edu"
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Bai",
+              "familyName": "Shi",
+              "digitalIdentifier": "0000-0003-3926-1841",
+              "affiliation": "Department of Physiology and Neuroscience Program, Biomedicine Discovery Institute, Monash University, Clayton, Australia",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Sylwia",
+              "familyName": "Bednarek",
+              "digitalIdentifier": "0000-0002-5743-5967",
+              "affiliation": "Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of Polish Academy of Sciences",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Agata",
+              "familyName": "Kulesza",
+              "affiliation": " Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, Warsaw, Poland ",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Gabriela",
+              "familyName": "Saworska",
+              "digitalIdentifier": "0000-0003-1174-8623",
+              "affiliation": "Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, Warsaw, Poland",
+              "emailMissing": true
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Sadaf",
+              "familyName": "Teymornejad",
+              "digitalIdentifier": "0000-0002-9713-7518",
+              "affiliation": "Department of Physiology and Neuroscience Program, Biomedicine Discovery Institute, Monash University, Clayton, Australia",
+              "emailMissing": false,
+              "email": "sadaf.teymornejad@monash.edu"
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Katrina H.",
+              "familyName": "Worthy",
+              "digitalIdentifier": "0000-0001-9539-9744",
+              "affiliation": "Department of Physiology and Neuroscience Program, Biomedicine Discovery Institute, Monash University, Clayton, Australia",
+              "emailMissing": false,
+              "email": "katrina.worthy@monash.edu"
+            }
+          },
+          {
+            "personMissing": true,
+            "newPerson": {
+              "givenName": "Piotr",
+              "familyName": "Majka",
+              "digitalIdentifier": "0000-0002-9055-8686",
+              "affiliation": "Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of Polish Academy of Sciences",
+              "emailMissing": false,
+              "email": "p.majka@nencki.edu.pl"
+            }
+          }
+        ]
+      },
+      "datasetVersion": {
+        "otherContribution": []
+      }
+    },
+    "experiment": {
+      "subjectExpMetadata": {
+        "subjectsExist": true
+      },
+      "datasetVersion": {
+        "experimentalApproach": [
+          null
+        ],
+        "technique": [
+          null
+        ],
+        "keywordsIntro": null,
+        "techniqueIntro": null,
+        "experimentalApproachIntro": null,
+        "studyTargetIntro": null,
+        "preparationDesignIntro": null
+      }
+    }
+  }
+}
