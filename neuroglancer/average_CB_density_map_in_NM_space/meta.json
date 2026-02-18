@@ -1,0 +1,36 @@
+{
+    "version": 1, 
+    "bestViewPoints": [
+        {
+            "type": "enclosed",
+            "points": [
+                {
+                    "type": "point",
+                    "value": [-1, 1, 1]
+                },
+                {
+                    "type": "point",
+                    "value": [-1, 1, -1]
+                },
+                {
+                    "type": "point",
+                    "value": [1, 1, -1]
+                },
+                {
+                    "type": "point",
+                    "value": [1, 1, 1]
+                }
+            ]
+        }
+    ],
+    
+    "data": {
+        "type": "image/1d",
+        "range": [{
+            "min": 0,
+            "max": 100000 
+        }]
+    },
+
+    "preferredColormap": ["oranges"]
+}

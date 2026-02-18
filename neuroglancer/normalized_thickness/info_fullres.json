@@ -1,7 +1,7 @@
 {
     "type": "image",
-    "num_channels": 3,
-    "data_type": "uint8",
+    "num_channels": 1,
+    "data_type": "float32",
     "scales": [
         {
             "encoding": "raw",
