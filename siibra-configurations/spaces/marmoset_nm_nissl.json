@@ -3,7 +3,6 @@
 	"@type": "siibra/space/v0.0.1",
 	"name": "Marmoset Nencki-Monash Template (Nissl Histology) 2020",
 	"shortName": "marmoset_nm_nissl_2020",
-	"prerelease": true,
 	"modality": "histology",
 	"species": "Callithrix Jacchus",
 	"volumes": [
@@ -16,8 +15,7 @@
 		}
 	],
 	"ebrains": {
-		"openminds/Species": "627bac2f-2b4c-4f2d-ae4e-9373a7f430f2",
-        "openminds/DatasetVersion": "7b55dd29-c6f1-41b2-a886-64acb42036d7"
+		"openminds/Species": "627bac2f-2b4c-4f2d-ae4e-9373a7f430f2"
 	},
 	"publications": [
 		{
