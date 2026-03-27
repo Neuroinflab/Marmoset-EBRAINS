@@ -46,3 +46,37 @@ Dataset upload completed: 9 April 2025
 Dataset descriptor submitted: 6 June 2025  
 Uploaded dataset validated: 13 October 2025  
 Dataset released: 1 December 2025 (326 days)
+
+
+## Dissemination of the project results
+
+### Peer-reviewed article
+Originally, we planned to prepare a peer-reviewed article quantitatively comparing the accuracy of different brain registration tools. This study was intended to use [marmoset-specific pipeline](https://doi.org/10.1002/cne.24023) from the Nencki Institute alongside species-agnostic EBRAINS software stack([QuickNii](https://ebrains.eu/data-tools-services/tools/quicknii) and [Visualign](https://ebrains.eu/data-tools-services/tools/visualign)) to map marmoset brain data and measure how precisely the tools performed.
+
+As the project moved forward, delays in data curation and integration required more time than we initially anticipated. After consulting with the Work Package 4 coordinator, we decided to pivot away from the article to ensure we could focus on our core tasks within the project’s timeline.
+
+Despite this change in plans, the Nencki team continued to develop the necessary technical tools for as long as the project allowed. This effort resulted in reliable methods for comparing brain segmentations and a dedicated pipeline for registering the marmoset cortex to the Nencki-Monash template. Crucially, these methods were validated against "ground truth" data—manual brain maps created by an expert neuroanatomist. These outcomes are now publicly available in the XXX branch of this repository.
+
+### Abstracts and poster presentations
+* **Majka P.**, Bai S., **Datta A.**, **Łabuszewska K.**, **Syc M.**, **Walkiewicz T.**, Rosa M.G.P (2026). *Expanding the EBRAINS digital atlasing ecosystem: integrating the common marmoset brain template.* Neuronus Neuroscience Forum 2026. 24th-26th April 2026, Jagiellonian University Kraków, Poland.
+* **Majka P.**, Bai S., **Datta A.**, **Łabuszewska K.**, **Syc M.**, **Walkiewicz T.**, Rosa M.G.P (2025). *Bringing Marmoset to EBRAINS. 17th International Congress of the Polish Neuroscience Society*, Wrocław, 2nd-5th September 2025, poster no. [P2.45](https://ptbun.org.pl/base/abstracts_view.php?a=show&no=9176171382) ([see the poster](https://pmajka.github.io/2025-08-26-pns-ebrains-poster.jpg)).
+
+### Talks and presentations
+* **Majka P.** (2025) *Getting the marmoset aboard EBRAINS - a case study*. User talk at EBRAINS Summit, 10th December 2025, Brussels, Belgium (invited speaker).
+* **Majka P.** (2025). *Digital neuroanatomy, why and how? Cortico-cortical connectivity atlas of the common marmoset (Callithrix jacchus)*. Flash talk at PRIMatE Resource Exchange (PRIME-RE) Global Collaboration Forum, 4th–5th December 2025, online meeting.
+* **Majka P.** (2025). *Bringing Marmoset to EBRAINS (Marmoset@EBRAINS)*. EBRAINS Co-Design meeting, 10th June 2025, online meeting (invited speaker).
+* **Majka P.** (2025). *Digital neuroanatomy, why and how? 17th International Congress of the Polish Neuroscience Society*, Wrocław, 3rd September 2025 (invited speaker during a plenary session).
+
+### Press releases and interviews
+19th February 2026
+* https://ebrains.eu/news-and-events/2026/new-marmoset-brain-atlas-added-to-ebrains
+* https://x.com/EBRAINS_eu/status/2024500316444479804
+* https://www.linkedin.com/feed/update/urn:li:activity:7430266127756230656
+* https://mastodon.social/@ebrains/116097914748192558
+* https://bsky.app/profile/ebrains.bsky.social/post/3mf7ulwkjj22s
+
+22nd December 2025
+* https://ebrains.eu/data-tools-services/brain-atlases/marmoset-brain-atlas
+
+20 March 2025
+* https://ebrains.eu/news-and-events/2025/four-new-open-call-projects-will-contribute-with-large-datasets-and-new
