@@ -80,3 +80,55 @@ Despite this change in plans, the Nencki team continued to develop the neces
 
 20 March 2025
 * https://ebrains.eu/news-and-events/2025/four-new-open-call-projects-will-contribute-with-large-datasets-and-new
+
+
+#### 17th International Congress of the Polish Neuroscience Society,  Wrocław, 2-5 September 2025 abstract
+[P2.45. BRINGING MARMOSET TO EBRAINS](https://ptbun.org.pl/base/abstracts_view.php?a=show&no=9176171382)
+
+Piotr Majka (1,2), Shi Bai (2), Adam Datta (1), Karolina Łabuszewska (1), Marcin Syc (1), Tomasz Walkiewicz (1), Marcello G. P. Rosa (2)  
+
+(1) Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, 02-093 Warsaw, Poland  
+(2) Biomedicine Discovery Institute and Department of Physiology, Monash University, Clayton, VIC 3800, Australia
+
+**INTRODUCTION**: EBRAINS is one of the most potent platforms for advancing neuroscience research. While it provides extensive support for rodent (predominantly mouse) and human-oriented datasets, it currently supports only one non-human primate (NHP) species despite the critical role of NHPs in bridging the translational gap between rodent and human studies.
+
+**AIM(S)**: To address this limitation, we propose to expand the EBRAINS platform by incorporating a new atlas of the marmoset (Callithrix jacchus) cerebral cortex, which we will call Marmoset@EBRAINS. This atlas will be accompanied by diverse datasets such as neuronal distribution and cellular-level connectivity registered to this new reference framework.
+
+**METHOD(S)**: The proposed atlas will be derived from the Nencki-Monash marmoset brain template (NM template), a gender-balanced, morphological average of 20 young adult marmosets. Based on Nissl histology, the template combines the detailed cytoarchitectural information of histology-based atlases with the isotropic resolution and probabilistic analyses typical of MR-based templates. We will then complement the new framework with multimodal datasets, including comprehensive maps of neuronal distribution in the cortex and results from 143 experiments investigating cortical area connections using fluorescent tracers. Additionally, we will demonstrate how EBRAINS users can map their datasets onto the Marmoset@EBRAINS atlas using existing EBRAINS digital atlasing tools.
+
+**CONCLUSIONS**: This project will lay the groundwork for the broad integration of the marmoset as a model species within EBRAINS. The project will directly benefit the EBRAINS initiative by enabling more extensive cross-species analyses and encouraging other marmoset research groups to integrate their datasets with the new framework, thereby expanding the user base. It also represents a significant step towards generalising the available atlasing tools, enhancing the platform's versatility.
+
+**FINANCIAL SUPPORT**: This project is co-funded by the European Union's Horizon Europe Research Infrastructures programme under grant agreement no. 101147319 (EBRAINS 2.0) and by the National Science Centre (2019/35/D/NZ4/03031).
+
+#### EBRAINS Summit 2025 – Transforming Brain Research and Medicine – Brussels on 8-11 December.
+[User talk: Bringing Marmoset to EBRAINS](https://summit2025.ebrains.eu/programme/user-talk-bringing-marmoset-to-ebrains)
+
+Piotr Majka (1)
+
+(1) Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, 02-093 Warsaw, Poland
+
+
+The [Marmoset@EBRAINS project](https://search.kg.ebrains.eu/instances/19810ecd-6bc4-47b8-ad6c-cd4c7a71c573?noSilentSSO=true) focused on expanding the EBRAINS research infrastructure by incorporating a digital atlas of the common marmoset brain. This effort is driven by the marmoset's growing importance as a primate model for bridging the translational gap between human and rodent studies in neuroscience. At the same time, the project serves as a real-world test of the platform's core principles: flexibility, interoperability, and extensibility.
+
+
+#### NEURONUS & Young PTBUN Neuroscience Forum Krakow, 24-26 April 2026 Abstract
+#### Expanding the EBRAINS digital atlasing ecosystem: integrating the common marmoset brain template
+
+Piotr Majka (1,2), Shi Bai (2), Adam Datta (1), Karolina Łabuszewska (1), Marcin Syc (1), Tomasz Walkiewicz (1), Marcello G. P. Rosa (2)  
+
+(1) Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, 02-093 Warsaw, Poland  
+(2) Biomedicine Discovery Institute and Department of Physiology, Monash University, Clayton, VIC 3800, Australia
+
+EBRAINS is a leading platform for advancing neuroscience research, providing extensive support for rodent and human-oriented datasets. However, it currently supports only one non-human primate (NHP) species, despite the critical role NHPs play in bridging the transnational gap between rodent models and human studies. From a technical standpoint, the platform lacks a standardized procedure for incorporating atlases of additional animal species.
+
+To address this limitation, we propose extending the EBRAINS platform by integrating an atlas of the common marmoset brain, termed [Marmoset@EBRAINS project](https://search.kg.ebrains.eu/instances/19810ecd-6bc4-47b8-ad6c-cd4c7a71c573?noSilentSSO=true). The atlas is accompanied with additional datasets, including neuronal distribution and cellular-level connectivity. Additionally, we demonstrate how EBRAINS users can map their own datasets onto the atlas using the platform's digital atlasing tools.
+
+The proposed atlas is derived from the [Nencki-Monash](https://doi.org/10.1016/j.neuroimage.2020.117625) marmoset brain template, a morphological average of 20 marmoset brains. The template combines high-resolution cytoarchitectural information with the isotropic resolution of MR-based templates. The atlas is implemented via [Siibra-Explorer](https://atlases.ebrains.eu/viewer/#/a:nencki:nm:atlas:v1.0.0:marmoset/t:nencki:nm:referencespace:v1.0.0:MARMOSET_NM_NISSL_2020/p:nencki:nm:parcellationatlas:v1.0.0:MARMOSET_NM/@:0.0.0.-W000.._eCwg.2-FUe3._-s_W.2_evlu..16PF..0.0.0..CqK/vs:v2-ff011b0b), the native EBRAINS atlas browser, while accompanying datasets were curated using the OpenScienceData workflow.
+
+We implemented the Marmoset@EBRAINS atlas as a hosted resource on the platform. To facilitate this integration, we also extended the Siibra-Explorer plugin system to support features specific to our atlas. Further, we provided four curated, FAIR-compliant datasets that are fully integrated into the EBRAINS Knowledge Graph and registered with the openMINDS metadata framework.
+
+This project lays the foundation for integrating the marmoset as a model species within EBRAINS. By providing a framework that enables other research groups to contribute data, it substantially broadens the platform’s potential user base. Finally, this work marks an important step toward generalizing EBRAINS’ atlasing tools and increasing the platform’s versatility.
+
+Financial Support 
+
+EBRAINS 2.0 (101147319, Financial Support to Third Parties, FSTP)
