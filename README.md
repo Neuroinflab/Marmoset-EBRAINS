@@ -81,6 +81,7 @@ Despite this change in plans, the Nencki team continued to develop the neces
 20 March 2025
 * https://ebrains.eu/news-and-events/2025/four-new-open-call-projects-will-contribute-with-large-datasets-and-new
 
+### Abstracts
 
 #### 17th International Congress of the Polish Neuroscience Society,  Wrocław, 2-5 September 2025 abstract
 [P2.45. BRINGING MARMOSET TO EBRAINS](https://ptbun.org.pl/base/abstracts_view.php?a=show&no=9176171382)
