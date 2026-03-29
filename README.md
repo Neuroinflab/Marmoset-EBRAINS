@@ -63,6 +63,33 @@ Data descriptor prepared: 25 June 2025
 Accepted for the final review: 12 September 2025  
 Dataset released: 8 December 2025 (334 days)
 
+## Contribution to the EBRAINS digital atlasing infrastructure  
+Expanding the platform’s capability or functionality
+
+### Contribution to the OpenMINDS metadata framework
+<!---
+Adding the Marmoset NM Atlas Metadata
+-->
+Our primary contribution was to create and successfully merge the complete metadata definitions for the [Marmoset Nencki-Monash (NM) template](https://openminds.docs.om-i.org/en/latest/instance_libraries/anatomicalAtlasVersions/MarmosetNMA.html) and [parcellation](https://openminds.docs.om-i.org/en/latest/instance_libraries/parcellationEntities/MarmosetNMA.html) into the [`openMINDS_SANDS`](https://openminds.docs.om-i.org/en/latest/schema_specifications/SANDS.html#sands) module. This involved defining the `BrainAtlas`, `CommonCoordinateSpace`, and `ParcellationEntity` instances for a completely novel species from scratch (see [PR #303](https://github.com/openMetadataInitiative/openMINDS_instances/pull/303)).
+
+<!---
+Fixing Metadata Generation Bugs
+-->
+Further, while generating metadata files, we identified and patched several software bugs in the scripts. The fixes included, e.g., resolving a "double list bug" when generating `hasAnnotation` attributes, resolving problems where `IDs` were overwritten by `parent_id`, and correcting `hasParent` logic for parcellation entities.
+<!---
+Exposing Documentation and Validation Gaps
+-->
+In general, adding a new species to OpenMINDS served as a *stress test* for the platform. The Marmoset@EBRAINS project highlighted some structural gaps in the openMINDS ecosystem (e.g. [Issue #62](https://github.com/openMetadataInitiative/openMINDS/issues/62#issue-2969861157)) which emphasized the pressing need for automated validation tools so that external researchers can build and check their metadata without relying entirely on the small core curation team.
+
+### Application of EBRAINS digital atlasing and image registration toolkit
+Another contribution to the EBRAINS digital atlasing infrastructure was enabling the microscopic resolution images (0.5 µm per pixel) of the Calbindin positive (CB+) neurons through EBRAINS online tool for sharing multi-resolution images: [LocaliZoom](https://ebrains.eu/data-tools-services/tools/localizoom). In total, 457 sections images (approximately 330 gigapixels of imaging data), have been shared through the tool. A prerequisite for enabling the images via LocaliZoom was registering them to the Marmoset@EBRAINS atlas using EBRAINS digital atlasing tools: [QuickNII](https://ebrains.eu/data-tools-services/tools/quicknii) and [Visualign](https://ebrains.eu/data-tools-services/tools/visualign). This process has been carried out for all three datasets and are available under the links below:
+
+Microscopic resolution image of Calbindin positive (CB+) neurons for:
+* [Subject CJ1741](https://localizoom.apps.ebrains.eu/filmstripzoom.html?atlas=NckMnshMarmoset_50um&series=https://data-proxy.ebrains.eu/api/v1/buckets/img-69121624-98ee-4150-a09e-5e46618365/CJ1741_MAPv2.json&dziproot=https://data-proxy.ebrains.eu/api/v1/buckets/img-69121624-98ee-4150-a09e-5e46618365/CJ1741/&transform=.png=.tif.dzip)
+* [Subject CJ200L](https://localizoom.apps.ebrains.eu/filmstripzoom.html?atlas=NckMnshMarmoset_50um&series=https://data-proxy.ebrains.eu/api/v1/buckets/img-69121624-98ee-4150-a09e-5e46618365/CJ200L_mapped_MAP.json&dziproot=https://data-proxy.ebrains.eu/api/v1/buckets/img-69121624-98ee-4150-a09e-5e46618365/CJ200L/&transform=.png=.tif.dzip)
+* [Subject CJ205](https://localizoom.apps.ebrains.eu/filmstripzoom.html?atlas=NckMnshMarmoset_50um&series=https://data-proxy.ebrains.eu/api/v1/buckets/img-69121624-98ee-4150-a09e-5e46618365/CJ205_CalB_mapped_MAP.json&dziproot=https://data-proxy.ebrains.eu/api/v1/buckets/img-69121624-98ee-4150-a09e-5e46618365/CJ205/&transform=.png=.tif.dzip)
+
+
 ## Dissemination of the project results
 
 ### Peer-reviewed article
