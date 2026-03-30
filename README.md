@@ -1,3 +1,5 @@
+![Marmoset@EBRAINS intro image](https://raw.githubusercontent.com/Neuroinflab/Marmoset-EBRAINS/refs/heads/master/media/marmoset_at_ebrains_logo.png)
+
 # Marmoset@EBRAINS Chronicles
 
 [EBRAINS](https://ebrains.eu/) is a powerful platform for advancing neuroscience. While it provides extensive support for rodent and human research, it currently includes only a single non-human primate (NHP) species. This is a significant shortfall, as NHPs are crucial for bridging the translational gap between rodent studies and human applications. To address this, the [Marmoset@EBRAINS](https://search.kg.ebrains.eu/instances/19810ecd-6bc4-47b8-ad6c-cd4c7a71c573?noSilentSSO=true) project aims to expand the EBRAINS platform by introducing a new atlas of the marmoset (*Callithrix jacchus*) cerebral cortex, along with datasets covering neuronal distribution maps and cellular-level connectivity.
