@@ -72,10 +72,8 @@ Adding the Marmoset NM Atlas Metadata
 -->
 Our primary contribution was to create and successfully merge the complete metadata definitions for the [Marmoset Nencki-Monash (NM) template](https://openminds.docs.om-i.org/en/latest/instance_libraries/anatomicalAtlasVersions/MarmosetNMA.html) and [parcellation](https://openminds.docs.om-i.org/en/latest/instance_libraries/parcellationEntities/MarmosetNMA.html) into the [`openMINDS_SANDS`](https://openminds.docs.om-i.org/en/latest/schema_specifications/SANDS.html#sands) module. This involved defining the `BrainAtlas`, `CommonCoordinateSpace`, and `ParcellationEntity` instances for a completely novel species from scratch (see [PR #303](https://github.com/openMetadataInitiative/openMINDS_instances/pull/303)).
 
-<!---
-Fixing Metadata Generation Bugs
--->
-Further, while generating metadata files, we identified and patched several software bugs in the scripts. The fixes included, e.g., resolving a "double list bug" when generating `hasAnnotation` attributes, resolving problems where `IDs` were overwritten by `parent_id`, and correcting `hasParent` logic for parcellation entities.
+In order to prepare suitable [`jsonld`](https://openminds.docs.om-i.org/en/latest/shared/getting_started/jsonld_introduction.html) files, we created an automated script to read from our database and generate the metadata and the metadata version file. During this process, we identified a few unclear definitions of the `jsonld` schema, for instance, [`anatomicalAxesOrientation`](https://openminds.docs.om-i.org/en/latest/schema_specifications/controlledTerms/anatomicalAxesOrientation.html#anatomicalaxesorientation) (defined as *Structured information on the anatomical directions of the X, Y, and Z axis.*), [`axesOrigin`](https://openminds.docs.om-i.org/en/latest/schema_specifications/SANDS/non-atlas/customCoordinateFramework.html#axesorigin) (defined as *In openMINDS, `axesOrigin` is a property that specifies the origin (central point) of a Common Coordinate Space Version.*). The definitions are very generic and it is hard for contributors to work out the exact reference point, unit and direction. We also identified inconsistency in license metadata, and additionally, we identified a few existing openMINDS registrations with incorrect license links and reported the errors to the openMINDS team. ([PR #334](https://github.com/openMetadataInitiative/openMINDS_instances/issues/334))
+
 <!---
 Exposing Documentation and Validation Gaps
 -->
