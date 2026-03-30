@@ -1,4 +1,8 @@
-![Marmoset@EBRAINS intro image](https://raw.githubusercontent.com/Neuroinflab/Marmoset-EBRAINS/refs/heads/master/media/marmoset_at_ebrains_logo.png)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Neuroinflab/Marmoset-EBRAINS/refs/heads/master/media/marmoset_at_ebrains_logo.png" alt="Marmoset@EBRAINS intro image"/>
+</p>
+
 
 # Marmoset@EBRAINS Chronicles
 
