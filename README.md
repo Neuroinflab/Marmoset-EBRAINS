@@ -210,6 +210,6 @@ We implemented the Marmoset@EBRAINS atlas as a hosted resource on the platform.
 
 This project lays the foundation for integrating the marmoset as a model species within EBRAINS. By providing a framework that enables other research groups to contribute data, it substantially broadens the platform’s potential user base. Finally, this work marks an important step toward generalizing EBRAINS’ atlasing tools and increasing the platform’s versatility.
 
-Financial Support 
+# Financial Support 
 
 EBRAINS 2.0 (101147319, Financial Support to Third Parties, FSTP)
