@@ -1,11 +1,34 @@
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Neuroinflab/Marmoset-EBRAINS/refs/heads/master/media/marmoset_at_ebrains_logo.png" alt="Marmoset@EBRAINS intro image"/>
+  <img src="https://raw.githubusercontent.com/Neuroinflab/Marmoset-EBRAINS/refs/heads/master/media/marmoset_at_ebrains_logo.png" alt="Marmoset@EBRAINS intro_image"/>
 </p>
 
 
 # Marmoset@EBRAINS Chronicles
 
+- Datasets
+  - [Nencki-Monash Template: Average Template of the Marmoset Cortex](#nencki-monash-template-average-template-of-the-marmoset-cortex)
+  - [Probabilistic Localization of Cytoarchitectural Areas of the Nencki-Monash Average Template of the Marmoset Cortex](#probabilistic-localization-of-cytoarchitectural-areas-of-the-nencki-monash-average-template-of-the-marmoset-cortex)
+  - [Distribution of calbindin-positive neurons across areas and layers of the marmoset cerebral cortex](#distribution-of-calbindin-positive-neurons-across-areas-and-layers-of-the-marmoset-cerebral-cortex)
+  - [Cellular Resolution Cortico-Cortical Connectome of the Marmoset Monkey](#cellular-resolution-cortico-cortical-connectome-of-the-marmoset-monkey)
+
+    
+- Contribution to the EBRAINS digital atlasing infrastructure
+  - [Expanding the platform’s capability or functionality](#expanding-the-platforms-capability-or-functionality)
+  - [Contribution to the OpenMINDS metadata framework](#contribution-to-the-openminds-metadata-framework)
+  - [Application of EBRAINS digital atlasing and image registration toolkit](#application-of-ebrains-digital-atlasing-and-image-registration-toolkit)
+
+    
+- Dissemination of the project results
+  - [Peer-reviewed article](#peer-reviewed-article)
+  - [Abstracts and poster presentations](#abstracts-and-poster-presentations)
+  - [Talks and presentations](#talks-and-presentations)
+  - [Press releases and interviews](#press-releases-and-interviews)
+  - [Full Abstracts](#abstracts)
+    - [17th International Congress of the Polish Neuroscience Society, Wrocław, 2-5 September 2025 abstract](#17th-international-congress-of-the-polish-neuroscience-society-wrocaw-2-5-september-2025-abstract)
+    - [EBRAINS Summit 2025 – Transforming Brain Research and Medicine – Brussels on 8-11 December.](#ebrains-summit-2025--transforming-brain-research-and-medicine--brussels-on-8-11-december)
+    - [NEURONUS & Young PTBUN Neuroscience Forum Krakow, 24-26 April 2026 Abstract](#neuronus--young-ptbun-neuroscience-forum-krakow-24-26-april-2026-abstract)
+     
 [EBRAINS](https://ebrains.eu/) is a powerful platform for advancing neuroscience. While it provides extensive support for rodent and human research, it currently includes only a single non-human primate (NHP) species. This is a significant shortfall, as NHPs are crucial for bridging the translational gap between rodent studies and human applications. To address this, the [Marmoset@EBRAINS](https://search.kg.ebrains.eu/instances/19810ecd-6bc4-47b8-ad6c-cd4c7a71c573?noSilentSSO=true) project aims to expand the EBRAINS platform by introducing a new atlas of the marmoset (*Callithrix jacchus*) cerebral cortex, along with datasets covering neuronal distribution maps and cellular-level connectivity.
 
 The [Marmoset@EBRAINS](https://ebrains.eu/data-tools-services/brain-atlases/marmoset-brain-atlas) atlas is built upon the [Nencki-Monash (NM)](https://doi.org/10.1016/j.neuroimage.2020.117625) template, which represents a morphological average of 20 young adult marmosets. By using Nissl histology, this template combines the fine structural details found in histology-based atlases with the high-resolution, probabilistic approach typical of MRI templates. This framework is further enriched by [comprehensive maps of cortical neurons](https://doi.org/10.1371/journal.pcbi.1012428) and by results from [143 experiments](http://marmosetbrain.org) involving injections of fluorescent retrograde tracers to map [structural cortico-cortical connectivity](http://analysis.marmosetbrain.org/). Additionally, we show how researchers can use existing EBRAINS tools to map their own datasets onto this new reference framework.
@@ -70,19 +93,30 @@ Accepted for the final review: 12 September 2025
 Dataset released: 8 December 2025 (334 days)
 
 ## Contribution to the EBRAINS digital atlasing infrastructure  
-Expanding the platform’s capability or functionality
+
+#### Eexpanding the platform’s capability or functionality
+To enable the [Marmoset@EBRAINS](https://ebrains.eu/data-tools-services/brain-atlases/marmoset-brain-atlas) atlas and related features in the [siibra toolsuite](https://bigbrainproject.org/featured-project-siibra.html), we extended [siibra explorer](https://github.com/FZJ-INM1-BDA/siibra-explorer) with the following functionalities:
+ * Support for a new species, custom scaling, and theming ([PR #1485](https://github.com/FZJ-INM1-BDA/siibra-explorer/pull/1485)).
+ * Extended webstencils ([ng-layer-tune](https://github.com/xgui3783/ng-layer-tune) to add additional colour maps for feature display ([PR #9](https://github.com/xgui3783/ng-layer-tune/pull/9), [PR #10](https://github.com/xgui3783/ng-layer-tune/pull/10)).
+
+We also updated the [siibra-configuration](https://github.com/FZJ-INM1-BDA/siibra-configurations) repository with metadata related to the Marmoset@EBRAINS atlas:
+ * Created the necessary JSON files in the repository ([PR #100](https://github.com/FZJ-INM1-BDA/siibra-configurations/pull/100)) to enable the common marmoset as a species accepted by siibra explorer. The configuration includes elements related to the atlas, reference space, region parcellation, and segmentations of cortical areas.
+
+We upgraded the [siibra-python](https://github.com/FZJ-INM1-BDA/siibra-python) repository to support the new species and the related feature types:
+ * Patched siibra-python to support a new species, the common marmoset ([PR #654](https://github.com/FZJ-INM1-BDA/siibra-python/pull/654)).
+ * Extended the siibra-python tabular feature to use [Plotly](https://plotly.com/) to visualize the interareal cortical-cortical connectivity map. On top of that, the new feature class has enabled additional, previously unsupported functionalities, such as links to external datasets ([PR #685](https://github.com/FZJ-INM1-BDA/siibra-python/pull/685)).
+ * In order to visualize the cortical Calbindin-positive neuronal density maps, we extended the siibra-python cell density profile (calbindin density) plugin to handle profiles of a large number of areas with proper caching and metadata ([PR #694](https://github.com/FZJ-INM1-BDA/siibra-python/pull/694)).
+
+Upgraded [neuroglancer-script](https://github.com/HumanBrainProject/neuroglancer-scripts) to parse our research data and pre-compute the data package for siibra-explorer to load and display:
+ * Patched neuroglancer-script ([PR #46](https://github.com/HumanBrainProject/neuroglancer-scripts/pull/46)) to properly handle [RGB NIfTI files](https://brainder.org/2012/09/23/the-nifti-file-format/) (for both 3-tuple-based RGB data and structured object RGB format) and generate neuroglancer precomputed data bundles.
+
+ * Created [neuroglancer-formatted](https://github.com/google/neuroglancer/blob/master/src/datasource/precomputed/README.md) atlas templates, segmentation confidence, cell density maps, absolute and normalized cortical thickness maps, and brain model meshes, and uploaded them to the [EBRAINS Collaboratory](https://wiki.ebrains.eu/bin/view/Collabs/marmoset-nencki-monash-template) for public access.
 
 ### Contribution to the OpenMINDS metadata framework
-<!---
-Adding the Marmoset NM Atlas Metadata
--->
 Our primary contribution was to create and successfully merge the complete metadata definitions for the [Marmoset Nencki-Monash (NM) template](https://openminds.docs.om-i.org/en/latest/instance_libraries/anatomicalAtlasVersions/MarmosetNMA.html) and [parcellation](https://openminds.docs.om-i.org/en/latest/instance_libraries/parcellationEntities/MarmosetNMA.html) into the [`openMINDS_SANDS`](https://openminds.docs.om-i.org/en/latest/schema_specifications/SANDS.html#sands) module. This involved defining the `BrainAtlas`, `CommonCoordinateSpace`, and `ParcellationEntity` instances for a completely novel species from scratch (see [PR #303](https://github.com/openMetadataInitiative/openMINDS_instances/pull/303)).
 
-In order to prepare suitable [`jsonld`](https://openminds.docs.om-i.org/en/latest/shared/getting_started/jsonld_introduction.html) files, we created an automated script to read from our database and generate the metadata and the metadata version file. During this process, we identified a few unclear definitions of the `jsonld` schema, for instance, [`anatomicalAxesOrientation`](https://openminds.docs.om-i.org/en/latest/schema_specifications/controlledTerms/anatomicalAxesOrientation.html#anatomicalaxesorientation) (defined as *Structured information on the anatomical directions of the X, Y, and Z axis.*), [`axesOrigin`](https://openminds.docs.om-i.org/en/latest/schema_specifications/SANDS/non-atlas/customCoordinateFramework.html#axesorigin) (defined as *In openMINDS, `axesOrigin` is a property that specifies the origin (central point) of a Common Coordinate Space Version.*). The definitions are very generic and it is hard for contributors to work out the exact reference point, unit and direction. We also identified inconsistency in license metadata, and additionally, we identified a few existing openMINDS registrations with incorrect license links and reported the errors to the openMINDS team ([PR #334](https://github.com/openMetadataInitiative/openMINDS_instances/issues/334)).
+In order to prepare suitable [`jsonld`](https://openminds.docs.om-i.org/en/latest/shared/getting_started/jsonld_introduction.html) files, we created an [`automated script`](https://github.com/Neuroinflab/Marmoset-EBRAINS/blob/master/openminds/gen_openminds.py) to read from our database and generate the metadata and the metadata version file. During this process, we identified a few unclear definitions of the `jsonld` schema, for instance, [`anatomicalAxesOrientation`](https://openminds.docs.om-i.org/en/latest/schema_specifications/controlledTerms/anatomicalAxesOrientation.html#anatomicalaxesorientation) (defined as *Structured information on the anatomical directions of the X, Y, and Z axis.*), [`axesOrigin`](https://openminds.docs.om-i.org/en/latest/schema_specifications/SANDS/non-atlas/customCoordinateFramework.html#axesorigin) (defined as *In openMINDS, `axesOrigin` is a property that specifies the origin (central point) of a Common Coordinate Space Version.*). The definitions are very generic and it is hard for contributors to work out the exact reference point, unit and direction. We also identified inconsistency in license metadata, and additionally, we identified a few existing openMINDS registrations with incorrect license links and reported the errors to the openMINDS team ([PR #334](https://github.com/openMetadataInitiative/openMINDS_instances/issues/334)).
 
-<!---
-Exposing Documentation and Validation Gaps
--->
 In general, adding a new species to OpenMINDS served as a *stress test* for the platform. The Marmoset@EBRAINS project highlighted some structural gaps in the openMINDS ecosystem (e.g. [Issue #62](https://github.com/openMetadataInitiative/openMINDS/issues/62#issue-2969861157)) which emphasized the pressing need for automated validation tools so that external researchers can build and check their metadata without relying entirely on the small core curation team.
 
 ### Application of EBRAINS digital atlasing and image registration toolkit
