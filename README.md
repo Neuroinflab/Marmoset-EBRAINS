@@ -6,30 +6,32 @@
 
 # Marmoset@EBRAINS Chronicles
 
-[EBRAINS](https://ebrains.eu/) is a powerful platform for advancing neuroscience. While it provides extensive support for rodent and human research, it currently includes only a single non-human primate (NHP) species. This is a significant shortfall, as NHPs are crucial for bridging the translational gap between rodent studies and human applications. To address this, the [Marmoset@EBRAINS](https://search.kg.ebrains.eu/instances/19810ecd-6bc4-47b8-ad6c-cd4c7a71c573?noSilentSSO=true) project aims to expand the EBRAINS platform by introducing a new atlas of the marmoset (*Callithrix jacchus*) cerebral cortex, along with datasets covering neuronal distribution maps and cellular-level connectivity.
+[EBRAINS](https://ebrains.eu/) is a powerful platform for advancing neuroscience. While it provides extensive support for rodent and human research, it currently includes only a single non-human primate (NHP) species. This is a significant shortfall, as NHPs are crucial for bridging the translational gap between rodent studies and human applications. To address this, the [Marmoset@EBRAINS](https://search.kg.ebrains.eu/instances/19810ecd-6bc4-47b8-ad6c-cd4c7a71c573?noSilentSSO=true) project aims to expand EBRAINS platform by introducing a new atlas of the marmoset (*Callithrix jacchus*) cerebral cortex, along with datasets covering neuronal distribution maps and cellular-level connectivity.
 
 ## What are you going to find below?
 
-- Datasets we have released over the course of the project:
+- Datasets released over the course of the project:
   - [Nencki-Monash Template: Average Template of the Marmoset Cortex](#nencki-monash-template-average-template-of-the-marmoset-cortex)
   - [Probabilistic Localization of Cytoarchitectural Areas of the Nencki-Monash Average Template of the Marmoset Cortex](#probabilistic-localization-of-cytoarchitectural-areas-of-the-nencki-monash-average-template-of-the-marmoset-cortex)
   - [Distribution of calbindin-positive neurons across areas and layers of the marmoset cerebral cortex](#distribution-of-calbindin-positive-neurons-across-areas-and-layers-of-the-marmoset-cerebral-cortex)
   - [Cellular Resolution Cortico-Cortical Connectome of the Marmoset Monkey](#cellular-resolution-cortico-cortical-connectome-of-the-marmoset-monkey)
     
 - How did we contribute to the EBRAINS digital atlasing infrastructure:
-  - [Expanding the platform’s capability or functionality](#expanding-the-platforms-capability-or-functionality)
+  - [Expanding the platform’s capability and functionality](#expanding-the-platforms-capability-or-functionality)
   - [Contribution to the OpenMINDS metadata framework](#contribution-to-the-openminds-metadata-framework)
   - [Application of EBRAINS digital atlasing and image registration toolkit](#application-of-ebrains-digital-atlasing-and-image-registration-toolkit)
    
 - How we made sure that the scientific community knows about the Marmoset@EBRAINS project:
   - [Peer-reviewed article](#peer-reviewed-article)
-  - [Abstracts and poster presentations](#abstracts-and-poster-presentations)
+  - [Abstracts and posters](#abstracts-and-poster-presentations)
   - [Talks and presentations](#talks-and-presentations)
   - [Press releases and interviews](#press-releases-and-interviews)
-  - [Full Abstracts](#abstracts)
+  - [Full abstracts](#abstracts)
     - [17th International Congress of the Polish Neuroscience Society, Wrocław, 2-5 September 2025 abstract](#17th-international-congress-of-the-polish-neuroscience-society-wrocaw-2-5-september-2025-abstract)
     - [EBRAINS Summit 2025 – Transforming Brain Research and Medicine – Brussels on 8-11 December.](#ebrains-summit-2025--transforming-brain-research-and-medicine--brussels-on-8-11-december)
     - [NEURONUS & Young PTBUN Neuroscience Forum Krakow, 24-26 April 2026 Abstract](#neuronus--young-ptbun-neuroscience-forum-krakow-24-26-april-2026-abstract)
+
+## The context
      
 The [Marmoset@EBRAINS](https://ebrains.eu/data-tools-services/brain-atlases/marmoset-brain-atlas) atlas is built upon the [Nencki-Monash (NM)](https://doi.org/10.1016/j.neuroimage.2020.117625) template, which represents a morphological average of 20 young adult marmosets. By using Nissl histology, this template combines the fine structural details found in histology-based atlases with the high-resolution, probabilistic approach typical of MRI templates. This framework is further enriched by [comprehensive maps of cortical neurons](https://doi.org/10.1371/journal.pcbi.1012428) and by results from [143 experiments](http://marmosetbrain.org) involving injections of fluorescent retrograde tracers to map [structural cortico-cortical connectivity](http://analysis.marmosetbrain.org/). Additionally, we show how researchers can use existing EBRAINS tools to map their own datasets onto this new reference framework.
 
