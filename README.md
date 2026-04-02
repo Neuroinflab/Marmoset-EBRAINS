@@ -135,11 +135,11 @@ Microscopic resolution image of Calbindin positive (CB+) neurons for:
 ### Peer-reviewed article
 Originally, we planned to prepare a peer-reviewed article quantitatively comparing the accuracy of different brain registration tools. This study was intended to use [marmoset-specific pipeline](https://doi.org/10.1002/cne.24023) from the Nencki Institute alongside species-agnostic EBRAINS software stack ([QuickNii](https://ebrains.eu/data-tools-services/tools/quicknii) and [Visualign](https://ebrains.eu/data-tools-services/tools/visualign)) to map marmoset brain data and quantitavely compare the performance of both pipelines.
 
-As the project moved forward, delays in data curation and integration required more time than we initially anticipated. After consulting with the Work Package 4 coordinator, we decided to pivot away from the article to ensure we could focus on our core tasks within the project’s timeline.
+As the project progressed, delays in data curation and integration required more time than we had initially anticipated. After consulting with the Work Package 4 coordinator, we decided to pivot away from the article to ensure we could focus on our core tasks within the project’s timeline.
 
 Despite this change in plans, the Nencki team continued to develop the necessary technical tools for as long as the project allowed. This effort resulted in reliable methods for comparing brain segmentations and a dedicated pipeline for registering the marmoset cortex to the Nencki-Monash template. Crucially, these methods were validated against "ground truth" data—manual brain maps created by an expert neuroanatomist. These outcomes are now publicly available in the [`integration_with_ebrains_registration_toolkit`](https://github.com/Neuroinflab/Marmoset-EBRAINS/tree/integration_with_ebrains_registration_toolkit) branch of this repository.
 
-### Abstracts and poster presentations
+### Abstracts and posters
 * **Majka P.**, Bai S., **Datta A.**, **Łabuszewska K.**, **Syc M.**, **Walkiewicz T.**, Rosa M.G.P (2026). *Expanding the EBRAINS digital atlasing ecosystem: integrating the common marmoset brain template.* Neuronus Neuroscience Forum 2026. 24th-26th April 2026, Jagiellonian University Kraków, Poland.
 * **Majka P.**, Bai S., **Datta A.**, **Łabuszewska K.**, **Syc M.**, **Walkiewicz T.**, Rosa M.G.P (2025). *Bringing Marmoset to EBRAINS. 17th International Congress of the Polish Neuroscience Society*, Wrocław, 2nd-5th September 2025, poster no. [P2.45](https://ptbun.org.pl/base/abstracts_view.php?a=show&no=9176171382) ([see the poster](https://pmajka.github.io/2025-08-26-pns-ebrains-poster.jpg)).
 
