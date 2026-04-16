@@ -202,7 +202,7 @@ Piotr Majka (1,2), Shi Bai (2), Adam Datta (1), Karolina Łabuszewska (1)
 (1) Laboratory of Neuroinformatics, Nencki Institute of Experimental Biology of the Polish Academy of Sciences, 02-093 Warsaw, Poland  
 (2) Biomedicine Discovery Institute and Department of Physiology, Monash University, Clayton, VIC 3800, Australia
 
-EBRAINS is a leading platform for advancing neuroscience research, providing extensive support for rodent and human-oriented datasets. However, it currently supports only one non-human primate (NHP) species, despite the critical role NHPs play in bridging the transnational gap between rodent models and human studies. From a technical standpoint, the platform lacks a standardized procedure for incorporating atlases of additional animal species.
+EBRAINS is a leading platform for advancing neuroscience research, providing extensive support for rodent and human-oriented datasets. However, it currently supports only one non-human primate (NHP) species, despite the critical role NHPs play in bridging the tranlational gap between rodent models and human studies. From a technical standpoint, the platform lacks a standardized procedure for incorporating atlases of additional animal species.
 
 To address this limitation, we propose extending the EBRAINS platform by integrating an atlas of the common marmoset brain, termed [Marmoset@EBRAINS project](https://search.kg.ebrains.eu/instances/19810ecd-6bc4-47b8-ad6c-cd4c7a71c573?noSilentSSO=true). The atlas is accompanied with additional datasets, including neuronal distribution and cellular-level connectivity. Additionally, we demonstrate how EBRAINS users can map their own datasets onto the atlas using the platform's digital atlasing tools.
 
@@ -215,3 +215,5 @@ This project lays the foundation for integrating the marmoset as a model specie
 # Financial Support 
 
 EBRAINS 2.0 (101147319, Financial Support to Third Parties, FSTP)
+
+National Science Centre (2019/35/D/NZ4/03031)
